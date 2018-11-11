@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1cb8aa8a-9f2f-4e6c-9447-a64a16fd39f5" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/zhongjiu$gotest.coverage" NAME="gotest Coverage Results" MODIFIED="1541147224920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myapp" />
+    <SUITE FILE_PATH="coverage/zhongjiu$views.coverage" NAME="views Coverage Results" MODIFIED="1541071239303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myapp" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zhongjiu@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zhongjiu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zhongjiu@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="zhongjiu: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1729620913">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="40" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.147" value="1" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.26" value="4" />
+          <entry key="project.open.time.27" value="3" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="6" />
+          <entry key="project.open.time.30" value="2" />
+          <entry key="project.open.time.31" value="3" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.73" value="1" />
+          <entry key="project.open.time.79" value="1" />
+          <entry key="project.opened" value="47" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cell" value="1171" />
+          <entry key="css" value="423" />
+          <entry key="html" value="6788" />
+          <entry key="js" value="2235" />
+          <entry key="json" value="130" />
+          <entry key="py" value="7854" />
+          <entry key="sql" value="34" />
+          <entry key="txt" value="123" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="423" />
+          <entry key="HTML" value="6788" />
+          <entry key="JSON" value="130" />
+          <entry key="JavaScript" value="2235" />
+          <entry key="PLAIN_TEXT" value="123" />
+          <entry key="Python" value="7854" />
+          <entry key="SQL" value="32" />
+          <entry key="Scratch" value="1173" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="auth_user" value="3" />
+          <entry key="css" value="33" />
+          <entry key="django_content_type" value="2" />
+          <entry key="django_migrations" value="7" />
+          <entry key="django_session" value="2" />
+          <entry key="html" value="48" />
+          <entry key="jpg" value="5" />
+          <entry key="js" value="56" />
+          <entry key="json" value="13" />
+          <entry key="myapp_user" value="3" />
+          <entry key="png" value="4" />
+          <entry key="py" value="78" />
+          <entry key="sql" value="19" />
+          <entry key="zj_market" value="30" />
+          <entry key="zj_supermarket" value="1" />
+          <entry key="zj_users" value="1" />
+          <entry key="zj_wheel" value="9" />
+          <entry key="zj_whiteSpirit" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="33" />
+          <entry key="Database Element" value="70" />
+          <entry key="HTML" value="48" />
+          <entry key="Image" value="9" />
+          <entry key="JSON" value="13" />
+          <entry key="JavaScript" value="56" />
+          <entry key="Python" value="78" />
+          <entry key="SQL" value="14" />
+          <entry key="Scratch" value="5" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>floor_liquor</find>
+      <find>content</find>
+      <find>爆品</find>
+      <find>f_l_c_content</find>
+      <find>白</find>
+      <find>商城</find>
+      <find>placeid placeid suitid 0</find>
+      <find>shops</find>
+      <find>fitid</find>
+      <find>sortIndex</find>
+      <find>content_right</find>
+      <find>.content_right</find>
+      <find>ul2</find>
+      <find>has-error</find>
+      <find>user</find>
+      <find>左边</find>
+      <find>login</find>
+      <find>axf</find>
+      <find>market</find>
+      <find>good</find>
+      <find>1.png</find>
+      <find>img</find>
+      <find>left</find>
+      <find>.c_i_c_b_left a</find>
+      <find>ShoppingCart</find>
+      <find>.c_i_c_b_left</find>
+      <find>shoppingCart</find>
+      <find>big</find>
+      <find>pro</find>
+      <find>c</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>..</replace>
+      <replace>../static/img/</replace>
+      <replace>/</replace>
+      <replace>/static</replace>
+      <replace>/static/img</replace>
+      <replace>suitid</replace>
+      <replace>suit</replace>
+      <replace>shoppingCart</replace>
+      <replace>ShoppingCart</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="tan990057745" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="zhongjiu" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/zhongjiu/urls.py" />
+        <option value="$PROJECT_DIR$/static/js/test.js" />
+        <option value="$PROJECT_DIR$/static/json/banner.json" />
+        <option value="$PROJECT_DIR$/static/json/red_wine.json" />
+        <option value="$PROJECT_DIR$/static/json/commodityList.json" />
+        <option value="$PROJECT_DIR$/static/json/Cart.json" />
+        <option value="$PROJECT_DIR$/zhongjiu/__init__.py" />
+        <option value="$PROJECT_DIR$/static/css/register.css" />
+        <option value="$PROJECT_DIR$/templates/ShoppingCart.html" />
+        <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/static/js/buttonTest.js" />
+        <option value="$PROJECT_DIR$/myapp/gotest.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4e36bb18-6d89-434f-815a-8651e1588c56/console.sql" />
+        <option value="$PROJECT_DIR$/static/js/index.js" />
+        <option value="$PROJECT_DIR$/static/css/index.css" />
+        <option value="$PROJECT_DIR$/static/js/home_page.js" />
+        <option value="$PROJECT_DIR$/static/css/home_page.css" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/css/home_swiper.css" />
+        <option value="$PROJECT_DIR$/static/js/home_swiper.js" />
+        <option value="$PROJECT_DIR$/static/js/home_show.js" />
+        <option value="$PROJECT_DIR$/static/json/floor_liquor.json" />
+        <option value="$PROJECT_DIR$/static/css/commodityList.css" />
+        <option value="$PROJECT_DIR$/static/js/commodityList.js" />
+        <option value="$PROJECT_DIR$/static/js/market.js" />
+        <option value="$PROJECT_DIR$/static/js/register.js" />
+        <option value="$PROJECT_DIR$/static/js/entry.js" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/static/css/head.css" />
+        <option value="$PROJECT_DIR$/templates/register.html" />
+        <option value="$PROJECT_DIR$/zhongjiu/settings.py" />
+        <option value="$PROJECT_DIR$/myapp/admin.py" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
+        <option value="$PROJECT_DIR$/templates/product.html" />
+        <option value="$PROJECT_DIR$/static/css/ProductList.css" />
+        <option value="4e36bb18-6d89-434f-815a-8651e1588c56/schema/zhongjiu/table/zj_market.sql" />
+        <option value="$PROJECT_DIR$/static/js/productMsg.js" />
+        <option value="$PROJECT_DIR$/templates/market.html" />
+        <option value="$PROJECT_DIR$/myapp/models.py" />
+        <option value="$PROJECT_DIR$/myapp/urls.py" />
+        <option value="$PROJECT_DIR$/myapp/views.py" />
+        <option value="$PROJECT_DIR$/static/js/ProductList.js" />
+        <option value="$PROJECT_DIR$/templates/productMsg.html" />
+        <option value="$PROJECT_DIR$/templates/shoppingCart.html" />
+        <option value="$PROJECT_DIR$/static/js/shoppingCart.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="371" />
+    <option name="y" value="27" />
+    <option name="width" value="936" />
+    <option name="height" value="731" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zhongjiu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongjiu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongjiu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongjiu" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongjiu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongjiu" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhongjiu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhongjiu" type="462c0819:PsiDirectoryNode" />
+              <item name="zhongjiu" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="exasol&#10;sqlite&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myapp/migrations" />
+      <recent name="$PROJECT_DIR$/static/fonts" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/json" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.gotest">
+    <configuration name="gotest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="zhongjiu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myapp/gotest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="zhongjiu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myapp/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="zhongjiu" type="Python.DjangoServer" factoryName="Django server">
+      <module name="zhongjiu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.zhongjiu" />
+      <item itemvalue="Python.gotest" />
+      <item itemvalue="Python.views" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.gotest" />
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1cb8aa8a-9f2f-4e6c-9447-a64a16fd39f5" name="Default Changelist" comment="" />
+      <created>1540557128147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540557128147</updated>
+    </task>
+    <task id="LOCAL-00001" summary="create project">
+      <created>1540606874277</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540606874277</updated>
+    </task>
+    <task id="LOCAL-00002" summary="注册 登陆 首页大致框架">
+      <created>1540631241146</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540631241146</updated>
+    </task>
+    <task id="LOCAL-00003" summary="重新布局注册界面">
+      <created>1540634139029</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540634139029</updated>
+    </task>
+    <task id="LOCAL-00004" summary="主页/登陆/注册基本框架">
+      <created>1540810796924</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540810796924</updated>
+    </task>
+    <task id="LOCAL-00005" summary="增加校验码功能">
+      <created>1540901247688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540901247689</updated>
+    </task>
+    <task id="LOCAL-00006" summary="完善验证码刷新/校验码比较功能">
+      <created>1540992243689</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1540992243689</updated>
+    </task>
+    <task id="LOCAL-00007" summary="完善注册视图">
+      <created>1541079858584</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1541079858584</updated>
+    </task>
+    <task id="LOCAL-00008" summary="导入wheel的js和css文件">
+      <created>1541213909174</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1541213909174</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2140016" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32849365" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3277027" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4994618" weight="0.34006733" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32828283" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50278443" side_tool="true" weight="0.41750842" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4972156" visible="true" weight="0.41750842" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3292683" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32849365" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3293556" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.3221957" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21081941" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32849365" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3277027" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4994618" weight="0.34006733" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32828283" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50161463" side_tool="true" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49838537" visible="true" weight="0.2777778" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3292683" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32849365" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3293556" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3221957" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="create project" />
+    <MESSAGE value="注册 登陆 首页大致框架" />
+    <MESSAGE value="重新布局注册界面" />
+    <MESSAGE value="主页/登陆/注册基本框架" />
+    <MESSAGE value="增加校验码功能" />
+    <MESSAGE value="完善验证码刷新，校验码比较功能" />
+    <MESSAGE value="完善验证码刷新/校验码比较功能" />
+    <MESSAGE value="完善注册视图" />
+    <MESSAGE value="导入wheel的js和css文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="导入wheel的js和css文件" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/css/register.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-351">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/home_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="129" column="41" selection-start-line="129" selection-start-column="37" selection-end-line="129" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/head.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="42" column="12" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/home_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/market.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/entry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/commodityList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhongjiu/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/Cart.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e36bb18-6d89-434f-815a-8651e1588c56/schema/zhongjiu/table/zj_wheel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/red_wine.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="64" column="55" selection-start-line="64" selection-start-column="55" selection-end-line="64" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/commodityList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2674">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/ProductList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="314" column="24" lean-forward="true" selection-start-line="314" selection-start-column="24" selection-end-line="314" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e36bb18-6d89-434f-815a-8651e1588c56/schema/zhongjiu/table/zj_market.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="32" column="91" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/commodityList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/productMsg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e36bb18-6d89-434f-815a-8651e1588c56/schema/zhongjiu/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e36bb18-6d89-434f-815a-8651e1588c56/schema/zhongjiu/table/zj_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e36bb18-6d89-434f-815a-8651e1588c56/schema/zhongjiu/table/django_migrations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e36bb18-6d89-434f-815a-8651e1588c56/schema/zhongjiu/table/zj_market">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e36bb18-6d89-434f-815a-8651e1588c56/schema/zhongjiu/table/django_content_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e36bb18-6d89-434f-815a-8651e1588c56/schema/zhongjiu/table/zj_whiteSpirit">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1314">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/shoppingCart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/productMsg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="524" column="47" selection-start-line="524" selection-start-column="47" selection-end-line="524" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/ProductList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="167" column="55" selection-start-line="167" selection-start-column="55" selection-end-line="167" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="39" column="66" lean-forward="true" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/market.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="499" column="28" selection-start-line="499" selection-start-column="28" selection-end-line="499" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shoppingCart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1364">
+          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
