@@ -17,4 +17,6 @@ urlpatterns = [
     url(r'^productMsg/(\d+)/$', views.productMsg, name='productMsg'),              #商品详情
     url(r'^addcart/$', views.addcart, name='addcart'),        #加购物车
     url(r'^subcart/$', views.subcart, name='subcart'),        #减购物车
+    url(r'^joinCart/$', views.joinCart, name='joinCart'),      #加入购物车
+
 ]

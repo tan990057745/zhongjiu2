@@ -10,7 +10,7 @@ from django.http import HttpResponse, response, JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from myapp.models import Wheel, whiteSpirit, Goods, Users, shoppingCart
+from myapp.models import Wheel, whiteSpirit, Goods, Users, myCart
 
 
 #######主页
@@ -160,12 +160,15 @@ def checkVerifyCode(request):
 ###########购物车#####
 def shoppingCart(request):
     token = request.session.get('token')
+    account= '未登录'
 
     if token:  # 显示该用户下 购物车信息
         user = Users.objects.get(token=token)
-        carts = shoppingCart.objects.filter(user=user).exclude(number=0)
+        account = user.account
+        carts = myCart.objects.filter(user=user).exclude(number=0)
 
-        return render(request, 'shoppingCart.html', context={'carts': carts})
+
+        return render(request, 'shoppingCart.html', context={'carts': carts,'account':account})
     else:  # 跳转到登录页面
         return redirect('myapp:login')
 #######以上为购物车#####
@@ -213,9 +216,9 @@ def market(request):
     if sortIndex == 0 or sortIndex == 1:
         goodsList5 = goodsList4
     elif sortIndex == 2:
-        goodsList5 = goodsList4.order_by('-price')  # 按价格
+        goodsList5 = goodsList4.order_by('price')  # 按价格
     elif sortIndex == 3:
-        goodsList5 = goodsList4.order_by('-commentsNum')  # 按评论数
+        goodsList5 = goodsList4.order_by('commentsNum')  # 按评论数
 
     data = {
         'goodsList': goodsList5,
@@ -262,7 +265,7 @@ def productMsg(request, num):
     photoList = product.photo.split('#')
     # print(photoList)
     token = request.session.get('token')
-    shoppingCart = []
+    carts = []
 
     if token:  # 根据用户，获取对应用户下所有购物车数据
         user = Users.objects.get(token=token)
@@ -273,7 +276,7 @@ def productMsg(request, num):
 
     if token:  # 根据用户，获取对应用户下所有购物车数据
         user = Users.objects.get(token=token)
-        carts = shoppingCart.objects.filter(user=user)
+        carts= myCart.objects.filter(user=user)
 
     data = {
         'product': product,
@@ -289,7 +292,7 @@ def productMsg(request, num):
 ######商品详情######
 
 
-
+#####
 def addcart(request):
     goodsid = request.GET.get('goodsid')
     token = request.session.get('token')
@@ -307,14 +310,14 @@ def addcart(request):
 
         # 商品已经在购物车，只修改商品个数
         # 商品不存在购物车，新建对象（加入一条新的数据）
-        carts = shoppingCart.objects.filter(user=user).filter(goods=goods)
+        carts = myCart.objects.filter(user=user).filter(goods=goods)
         if carts.exists():  # 修改数量
             cart = carts.first()
             cart.number = cart.number + 1
             cart.save()
             responseData['number'] = cart.number
         else:  # 添加一条新记录
-            cart = shoppingCart()
+            cart = myCart()
             cart.user = user
             cart.goods = goods
             cart.number = 1
@@ -339,7 +342,7 @@ def subcart(request):
     goods = Goods.objects.get(pk=goodsid)
 
     # 删减操作
-    cart = shoppingCart.objects.filter(user=user).filter(goods=goods).first()
+    cart = myCart.objects.filter(user=user).filter(goods=goods).first()
     cart.number = cart.number - 1
     cart.save()
 
@@ -350,3 +353,33 @@ def subcart(request):
     }
 
     return JsonResponse(responseData)
+
+
+def joinCart(request):
+    token = request.session.get('token')
+    goodsid = request.GET.get('goodsid')
+    responseData = {
+        'status':1
+    }
+    if token:
+        user = Users.objects.get(token=token)
+        goods = Goods.objects.get(pk=goodsid)
+
+        carts = myCart.objects.filter(user=user).filter(goods=goods)
+        if carts.exists():
+            cart = carts.first()
+            cart.number = cart.number + 1
+            cart.save()
+        else:
+            cart = myCart()
+            cart.user = user
+            cart.goods = goods
+            cart.number = 1
+            cart.save()
+        return JsonResponse(responseData)
+    else:
+        responseData = {
+                'status':0
+            }
+        return JsonResponse(responseData)
+

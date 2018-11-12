@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>商品详情-中酒网</title>
-    <link rel="stylesheet" href="{% static 'css/ProductList.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/ProductMsg.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/head.css' %}"/>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
     <script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/ProductList.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ProductMsg.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/head.js' %}"></script>
 </head>
 <body>
@@ -482,7 +482,7 @@
             {#						</div>#}
             {#					</div>#}
             <div class="c_i_l_bottom">
-                <p>商品编号：110898348600<a><i></i><span>收藏</span></a></p>
+                <p>{{ product.id }}<a><i></i><span>收藏</span></a></p>
             </div>
         </div>
         <div class="content_info_content">
@@ -521,7 +521,7 @@
                 <div class="c_i_c_b_left">
                     <span id="selectnum">
                         {% for cart in carts %}
-                            {% if product.id == cart.id %}
+                            {% if product.id == cart.goods_id %}
                                 {{ cart.number }}
                             {% endif %}
                         {% endfor %}
@@ -536,7 +536,7 @@
                     {#							<a class="minus">-</a>#}
                     {#						</div>#}
                     <div class="c_i_c_b_right">
-                        <a class="c_i_c_b_right_a1">加入购物车</a>
+                        <a class="c_i_c_b_right_a1"href="{% url 'myapp:shoppingCart' %}">查看购物车</a>
                         <i></i>
                         <a class="c_i_c_b_right_a2" href="shoppingCart.html">立即购买</a>
                         <span>（每个ID限量<em>12</em>套）</span>

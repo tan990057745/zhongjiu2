@@ -95,7 +95,7 @@ $(function () {
         var goodsid = $(this).attr('goodsid')
         // that为了解决，在ajax中，this指向问题
         var $that = $(this)
-        alert("哈哈哈1")
+        // alert("哈哈哈1")
 
         $.get('/addcart/', {'goodsid': goodsid}, function (response) {
             console.log(response)

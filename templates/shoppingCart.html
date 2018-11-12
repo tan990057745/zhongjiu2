@@ -22,7 +22,7 @@
 					<li><a href="{% url 'myapp:home' %}">中酒网</a></li>
 				</ul>
 				<ul>
-					<li><a href="{% url 'myapp:login' %}">[登录]</a> <a href="{% url 'myapp:register' %}">[免费注册]</a></li>
+					<li><a href="{% url 'myapp:login' %}">{{ account }}</a><a href="{% url 'myapp:register' %}">[免费注册]</a></li>
 					<li>投诉直达</li>
 					<li><a href="">网站导航</a></li>
 					<li>订单热线：<span>400-798-9999</span></li>
@@ -40,12 +40,13 @@
 			<div class="CartContent_content"></div>
 			<div class="CartContent_bottom"></div>
 			<!--空购物车-->
-			<div class="cart_message">
-				<ul>
-					<li>购物车内暂时没有商品，<a href="{% url 'myapp:login' %}">登录</a>后，将显示您之前加入的商品</li>
-					<li>去<a href="{% url 'myapp:home' %}">首页</a>挑选喜欢的商品</li>
-				</ul>
-			</div>
+{#			<div class="cart_message">#}
+{#				<ul>#}
+{#					<li>购物车内暂时没有商品，<a href="{% url 'myapp:login' %}">登录</a>后，将显示您之前加入的商品</li>#}
+{#					<li>去<a href="{% url 'myapp:home' %}">首页</a>挑选喜欢的商品</li>#}
+{#				</ul>#}
+{#			</div>#}
+
 			<!--有商品时购物车-->
 			<div class="cart_message1">
 				<div class="cart_message1_top">
@@ -58,12 +59,16 @@
 					</ul>
 				</div>
 				<div class="cart_message1_content">
-					<ul class="cart_message1_contentUl">
-                        {% for cart in carts %}
-                            <li class="cart_message1_content_li1"><img src="{{ cart.goods.img }}"/></li>
-                            <li class="cart_message1_content_li2">￥{{ cart.goods.price }}</li>
-                            <li class="cart_message1_content_li3"><input type="text" value="{{ cart.number }}"/></li>
-                        {% endfor %}
+                    {% for cart in carts %}
+					    <ul class="cart_message1_contentUl">
+                            <li class="cart_message1_content_li1"><img src="{{ cart.goods.img }}"/><a href="{% url 'myapp:productMsg' cart.goods_id %}">{{ cart.goods.name }}</a></li>
+                            <li class="cart_message1_content_li2" price="{{ cart.goods.price }}">￥{{ cart.goods.price }}</li>
+                            <li class="cart_message1_content_li3" number="{{ cart.number }}">{{ cart.number }}</li>
+                            <li class="cart_message1_content_li4">￥<span id="sumprice"></span></li>
+                            <li class="cart_message1_content_li5"><a href="#">删除</a></li>
+                        </ul>
+                    {% endfor %}
+{#                       <ul>#}
 {#						<li class="cart_message1_content_li1"><img src="{% static 'img/Cart(1).jpg' %}"/><a href="ProductList.html" class="names">43°国窖1573 500ml<em>[特价]</em></a></li>#}
 {#						<li class="cart_message1_content_li2">￥739.00</li>#}
 {#						<li class="cart_message1_content_li3"><input type="text" value="1"/></li>#}
@@ -71,17 +76,18 @@
 {#						<i class="add">+</i>#}
 {#						<li class="cart_message1_content_li4">￥739.00</li>#}
 {#						<li class="cart_message1_content_li5"><a href="">加入收藏夹</a><br/><a href="">删除</a></li>#}
-					</ul>
+{#                      </ul>#}
+
 				</div>
 				<div class="cart_message1_bottom">
-					<button>继续购物</button>
-					<div>
-						<p><em>2</em>件商品   总计金额：<span>￥764.00</span></p>
-					</div>
+					<a href="{% url 'myapp:market' %}">继续购物</a>
+{#					<div>#}
+{#						<p>  总计金额：<span>￥764.00</span></p>#}
+{#					</div>#}
 				</div>
 				<div class="end">
 					<ul>
-						<li>应付商品金额（不含运费）：<em>￥764.00</em></li>
+						<li>应付商品金额（不含运费）：￥<span id="totalprice"></span></li>
 						<li>去结算</li>
 					</ul>
 				</div>

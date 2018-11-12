@@ -485,7 +485,7 @@
 
         {#                这里插入商品展示列表#}
         <div class="shops">
-            <ul>
+            <ul class="market">
                 {% for goods in goodsList %}
                     <li>
                         <a href="{% url 'myapp:productMsg' goods.id %}">
@@ -498,7 +498,7 @@
                             <i>{{ goods.price }}</i>
                             <span>{{ goods.commentsNum }}条评论</span>
                         </p>
-                        <button>加入购物车</button>
+                        <button class="joinCart" goodsid="{{ goods.id }}">加入购物车</button>
                         <button>收藏</button>
                     </li>
                 {% endfor %}

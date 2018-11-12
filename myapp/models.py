@@ -53,7 +53,7 @@ class Goods(models.Model):
     brandid = models.IntegerField()       #品牌ID
     placeid = models.IntegerField()     #产地
     suitid = models.IntegerField()        #适用ID
-    goodsid = models.IntegerField()      #商品ID
+    goodsid = models.IntegerField()      #商品编号
     class Meta:
         db_table='zj_market'
 
@@ -68,7 +68,6 @@ class Users(models.Model):
     addr = models.CharField(max_length=256)
     # token
     token = models.CharField(max_length=256)
-
     class Meta:
         db_table = 'zj_users'
 
@@ -83,6 +82,14 @@ class shoppingCart(models.Model):
     isselect = models.BooleanField(default=True)
     class Meta:
         db_table = 'zj_shoppingcart'
+
+class myCart(models.Model):
+    user = models.ForeignKey(Users)
+    goods = models.ForeignKey(Goods)
+    number = models.IntegerField()
+    isselect = models.BooleanField(default=True)
+    class Mata:
+        db_table = 'zj_maycart'
 
 
 

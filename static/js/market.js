@@ -1,4 +1,18 @@
 $(function () {
+    // 加入购物车
+    $('.market li').each(function () {
+        $(this).find('.joinCart').click(function () {
+            var goodsid = $(this).attr('goodsid')
+            $.get('/joinCart/', {'goodsid': goodsid}, function (response) {
+                if (response.status == 1) {
+                    window.open('/shoppingCart/')
+                } else {
+                    window.open('/login/')
+                }
+            })
+        })
+    })
+
 
     // 点击设置cookie
     $('#brandBt li').click(function () {
